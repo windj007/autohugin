@@ -1,1 +1,1 @@
-exifread pyyaml dateutil argh argcomplete
+exifread pyyaml dateutil argh argcomplete subprocess32

@@ -46,7 +46,7 @@ _EXIF_EQ_RULES = map(Eq,
 
 
 class ImagesGrouper(object):
-    def __init__(self, max_timestamp_diff_seconds = 1.1):
+    def __init__(self, max_timestamp_diff_seconds = 5):
         self.timestamp_diff_rule = DiffSmaller('Image DateTimeOriginal',
                                                datetime.timedelta(seconds = max_timestamp_diff_seconds),
                                                lambda t: dateutil.parser.parse(str(t)))
